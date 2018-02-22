@@ -10,7 +10,7 @@ public class Messages {
   
   private static final ResourceBundle DEFAULT_BUNDLE = ResourceBundle.getBundle(BUNDLE_NAME, new Locale("pt", "BR"));
 
-  public static final ThreadLocal<ResourceBundle> RESOURCE_BUNDLE = new ThreadLocal<>();
+  public static final ThreadLocal<ResourceBundle> RESOURCE_BUNDLE = new ThreadLocal<ResourceBundle>();
 
   public static String getString(String key) {
     try {
